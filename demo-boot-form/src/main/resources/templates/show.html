@@ -3,8 +3,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
 <body>
+	<div class="alert alert-success">
+		<span th:text="'Tiempo trascurrido: ' + ${total}"></span>
+	</div>
+
 	<ul>
 		<li th:text="${user.username}"></li>
 		<li th:text="${user.password}"></li>
